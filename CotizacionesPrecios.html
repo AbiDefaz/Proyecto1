@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!-- Page Wrapper -->
+    <div id="page-wrapper">
+
+        <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Online Cinema</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="Reseña.html">Cartelera</a></li>
+                                    <li><a href="CotizacionesPrecios.html">Cotizaciones</a></li>
+                                    <li><a href="Contactos.html">Contactos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </header>
+        <!-- Main -->
+                    
+                    <script type="text/javascript">
+                    function calcular_coste(){
+                        var num_asiento=document.getElementById("n_asiento").value;
+                        var peliculas=document.getElementById("pel_asiento").value;
+                
+                        var res1=coste_boleto(num_asientos);
+                        var res2=coste_snap(peliculas);
+                        var restotal=res1+res2+res3;
+                        document.getElementById("result").value=("$"+restotal);
+                    }
+            function coste_lugar(n){
+                var coste_estancia=n*140;
+                return coste_estancia;
+            }
+        
+        
+        function alquiler_auto(n){
+            var coste=n*40;
+            if(n>7){
+                coste-=50;
+            }
+            else if(n>3){
+                coste-=20;
+            }
+            return coste;
+        }
+            </script>
+            <section class="form-register">
+            <form action="#">
+                <Aclonica>
+                    <center><h2>COTIZACION DE PRECIO</h2></center>
+                    <label  for="n_asientos">INGRESE EL NUMERO DE ENTRADAS:</label><br>
+                    <input type="text" id="n_peliculas">
+                    <br>
+                    <br>
+                    <label for="lugar_asiento">SELECCIONE SU PELICULA:</label><br>
+                    <select id="lugar_asiento">
+                        <option value="la mascara">LA MASCARA</option>
+                        <option value="rio">RIO</option>
+                        <option value="sin perdon">SIN PERDON</option>
+                        <option value="venon">VENON</option>
+                        <option value="el conjuro">EL CONJURO</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <center><input type="button" onclick="calcular_coste()" value="Calcular"></center>
+                    <br>
+                    <center><input type="reset" value="Limpiar"></center>
+                    <br>
+                    <br>
+                    <label for="result">EL COSTO FINAL DE LOS BOLETOS ES :</label>&nbsp;
+                    <input type="text" id="result">
+                </Aclonica>
+            </form>
+        </section>
+                
+            </script>
+            <!-- Footer -->
+                <footer id="footer">
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Travel Day</li>
+                        <li>© 2021 Todos los derechos reservados Creado por: <a>@Travelday</a></li>
+                    </ul>
+                </footer>
+
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
