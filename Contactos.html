@@ -35,44 +35,47 @@
                    
 			
                     <!-- Main -->
-				
+                 
+                    
                 <section class="form-register">
-                    <center><h2>Llene el formulario</h2></center>
-                    <center><p1>Para que un asesor se comunique contigo</p1></center>
-                       <form action="conexionclientes.php" method="POST">
-                           <br>
-                           <center>
-                           <h3 >Nombres:</h3>
-                               <input type ="text"name="nombres">
-                               <br>
-                               <br>
-                              <h3>Apellidos:</h3> 
-                               <input  type ="text"name="apellidos">
-                               <br>
-                               <br>
-                               <h3>Correo electronico:</h3>
-                               <input type ="text"name="correo_electronico">
-                               <br>
-                               <br>
-                               <h3>Numero de celular:</h3>
-                               <input type ="text"name="numero_celular">
-                            </center>
-                               <br>
-                            <br>
-                            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-                            <br>
-                            <center><input class="controls" type="submit" name="action" value="GUARDAR DATOS"> </center>                 
-                            </form>
-                            <form action="eliminar.php"  method="POST">
-                            <p>Buscarel cliente a eliminar:</p>
-                            <input class="controls" type="text" name="nombres" >
-                            <br>
-                            <center><input class="controls" type="submit" name="action" value="ELIMINAR"></center>
-                            </form>
-                            <br>
-                            <form action="editar.php" method="GET">
-                            <center> <input class="controls" type="submit" name="action" value="EDITAR"></center>
-                            </form>
+                    <center> <h2>PARTICIPA Y GANA UNA ENTRADA INGRESANDO SUS DATOS</h2> </center>
+                    <form action="conexion.php" method="POST">
+                        
+                       
+                        
+                        <H3>NOMBRE:</H3>
+                        <input type="text" name="nombre">
+                        <br>
+                        <H3>APELLIDOS:</H3>
+                        <input type="text" name="apellidos">
+                        <br>
+                
+                        <H3>CORREO:</H3>
+                        <input type="text" name="correo">
+                        <br>
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" name="action" value="GUARDAR DATOS">
+                        <br>
+                        <br>
+                    </form>
+                
+                        <form action="eliminar.php"  method="POST">
+                Buscar el nombre  a eliminar:
+                <input type="text" name="nombre" >
+                <br>
+                <input type="submit" name="btneliminar" value="ELIMINAR">
+                
+                </form>
+                <br>
+                <br>
+                
+                <button>
+                    <a href="mailto:defaz.abigail@gmail.com" style="text-decoration: none; color: rgb(238, 50, 50);">Enviar Sugerencias</a>
+                </button>
+                </body>
                             </section> 
                     </form>
                     <!-- Footer -->
